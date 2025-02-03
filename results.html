@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Results</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="results">
+        <h2>Check Your Result</h2>
+        <label for="term">Select Term:</label>
+        <select id="term">
+            <option value="second-term">Second Term</option>
+            <!--
+                <option value="second">Second Term</option>
+                <option value="third">Third Term</option>
+            -->
+        </select>
+
+        <label for="matric">Enter Matric Number:</label>
+        <input type="text" id="matric" placeholder="e.g. 12345">
+        <button id="check-result">Check Result</button>
+
+        <div id="result-output">
+            <h3>Result for <span id="selected-term"></span></h3><br>
+            <p><strong>Student Name:</strong> <span id="student-name"></span></p><br>
+            <p><strong>Class:</strong> <span id="student-class"></span></p><br>
+            <p><strong>Admission No:</strong> <span id="student-admission"></span></p><br>
+            <p><strong>Session:</strong> <span id="session"></span></p><br>
+            <p><strong>Final Position:</strong> <span id="position"></span></p><br>
+            <p><strong>Final Grade:</strong> <span id="grade"></span></p><br>
+
+            <h4>Subjects</h4>
+            <table>
+                <tr>
+                    <th>Subject</th>
+                    <th>1st CA</th>
+                    <th>2nd CA</th>
+                    <th>Exam</th>
+                    <th>Total</th>
+                    <th>Grade</th>
+                </tr>
+                <tbody id="subjects-list"></tbody>
+            </table>
+
+            <h4>Comments</h4><br>
+            <p><strong>Teacher:</strong> <span id="teacher-comment"></span></p><br>
+            <p><strong>VP:</strong> <span id="vp-comment"></span></p><br>
+            <p><strong>Principal:</strong> <span id="principal-comment"></span></p>
+
+            <button id="download-result">Download</button>
+            <button id="print-result">Print</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

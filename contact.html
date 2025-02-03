@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="logo">HEIS</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="profiles.html">Profiles</a></li>
+            <!--<li><a href="register.html">Register</a></li>-->
+            <li><a href="events.html">Events</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
+    </nav>
+    <br><br><br>
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>Have any questions? Reach out to us using the form below or visit us at our school location.</p>
+
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="d3c007d2-e27a-4566-be51-bda2a9728798">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <h3>School Address</h3>
+        <p>123 School Road, City, State, Nigeria</p>
+        <p>Email: info@schoolname.com</p>
+        <p>Phone: +234 801 234 5678</p>
+
+        <!-- Google Map Embed -->
+        <div class="map-container">
+            <iframe 
+                src="https://maps.google.com/maps?q=lagos,nigeria&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <script src="home.js"></script>
+</body>
+</html>
